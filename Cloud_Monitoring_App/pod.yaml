@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cloud-monitoring-app
+  labels:
+    app: cloud-monitoring-app
+spec:
+  containers:
+  - name: cloud-monitoring-app
+    image: public.ecr.aws/a1x1k1o1/cloud-monitoring-app:latest
+    ports:
+      - containerPort: 5000
+
